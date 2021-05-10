@@ -1,7 +1,7 @@
+<p class="styleTitulosubMenu">Nuestra Empresa</p><!--TITULO-->
 
-
-            <div class="contenedorImgPrincipal"><!-- CAJA PARA IMAGEN PRINCIPAL-->
-                <img class="imgPrincipal" src="../access/images/organigrama.png" alt="">
+            <div class="contenedorImgsubMenu"><!-- CAJA PARA IMAGEN PRINCIPAL-->
+                <img class="imgPrincipalsubMenu" src="../access/images/organigrama.png" alt="">
             </div>
 
  

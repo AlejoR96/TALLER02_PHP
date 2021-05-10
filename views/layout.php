@@ -32,7 +32,7 @@
         //DECLARE LA VARIABLE $vista PARA MOSTRAR LAS VISTAS(paginas) DEL PROYECTO//
             if(!isset($vista))
             {
-                $vista="home";   
+                $vista="home.php";   
             } 
             
             require $vista;  

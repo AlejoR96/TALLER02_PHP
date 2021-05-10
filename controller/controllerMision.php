@@ -1,7 +1,6 @@
 <?php
 
 $vista = "nosotros.php";
-$subVista="organigrama.php";  
+$subVista="mision.php";
 require("../views/layout.php");
-
 ?>
