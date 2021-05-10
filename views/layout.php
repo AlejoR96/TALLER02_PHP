@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="../access/css/styles.css"> <!--ENLACE PARA LLAMAR LA HOJA DE ESTILOS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"><!--Font of Google-->
-    <title>REPASO HTML</title>
+    <title>Taller PHP</title>
 </head>
 <body class="styleBody"> <!--CUERPO DE LA PAGINA-->
 
     <header class="styleHeader"> <!--INICIO ENCABEZADO-->
                 <nav class="contenedorNavmenu">
                     <ul class="styleUl">
-                        <li class="styleLi"><a class="styleLink" href="layout.php">Home</a></li>
-                        <li class="styleLi"><a class="styleLink" href="layout.php?opc=1">Nosotros</a></li>
-                        <li class="styleLi"><a class="styleLink" href="layout.php?opc=2">Contacto</a></li>
+                        <li class="styleLi"><a class="styleLink" href="../controller/controllerHome.php">Home</a></li>
+                        <li class="styleLi"><a class="styleLink" href="../controller/controllerNosotros.php">Nosotros</a></li>
+                        <li class="styleLi"><a class="styleLink" href="../controller/controllerContacto.php">Contacto</a></li>
                     </ul>  
                 </nav>
 
@@ -29,32 +29,13 @@
 
         <!--ESTE CONTENIDO SE CAMBIA O PASA ALGO AQUI-->
         <?php
-        //Variables
-            if(isset($_GET["opc"]))
+        //DECLARE LA VARIABLE $vista PARA MOSTRAR LAS VISTAS(paginas) DEL PROYECTO//
+            if(!isset($vista))
             {
-                $opcion = $_GET["opc"];//metodo get para url
-                //Condicional
-                switch($opcion){
-                    case 1:
-                        include "nosotros.php";
-                    break;
-                    case 2:
-                        include "contacto.php";
-                    break;
-                    default:
-                        echo ("Error");
-                    break;
-            }
-                //Basura 
-                /*if($opcion==1)
-                    include "link1.php";
-                elseif ($opcion==2)
-                    include "link2.php";
-                else
-                echo ("Error");*/
-            }
-            else
-            include "home.php";
+                $vista="home";   
+            } 
+            
+            require $vista;  
         ?>
 
     </main><!--FINAL CONTENIDO-->

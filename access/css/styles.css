@@ -139,6 +139,8 @@ a:hover {
   border-radius: 5px;
   border: 1px solid goldenrod;
 }
+
+/*ESTILOS TEXTO PRINCIPAL LINk2/CONTACTO*/
 .contenedorTxtPrincipalink2{
   background-color: white;
   display: flex;
@@ -150,4 +152,32 @@ a:hover {
   border-radius: 5px;
   border: 1px solid goldenrod;
 }
+
+/********************************************************************************/
+/*ESTILOS PARA EL SUBMENU EN LA VISTA NOSOTROS*/
+
+.contenedorSubmenu{
+  width: 40%;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid goldenrod;
+}
+.styleLisubMenu {
+  list-style: none;
+  margin: 0 20px 0 20px;
+  padding: 5px 15px 5px 15px;
+}
+
+.styleLisubMenu {
+  color:goldenrod;
+  text-align: center;
+}
+
+.styleLinksubMenu {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: larger;
+  font-weight: 300;
+}
+
 
